@@ -1,11 +1,17 @@
+
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
 }
 
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
+    buildFeatures {
+        dataBinding true
+    }
 
     defaultConfig {
         applicationId "com.andrei.compassapp"

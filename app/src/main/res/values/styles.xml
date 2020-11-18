@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="welcome_text">
+    <style name="title_text">
       <item name="fontFamily">@font/latn</item>
         <item name="color">@color/primaryTextColor</item>
     </style>
@@ -13,4 +13,5 @@
         <item name="android:textColor">@color/primaryTextColor</item>
         <item name="android:background">@drawable/round_button</item>
     </style>
+
 </resources>

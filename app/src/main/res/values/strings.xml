@@ -5,4 +5,9 @@
     <string name="log_in">Log In</string>
     <string name="register">Register</string>
     <string name="continue_with_google">Continue with Google</string>
+    <string name="login">Login</string>
+    <string name="username_hint">username...</string>
+    <string name="password_hint">password...</string>
+    <string name="register_text_login">Don\'t have an account yet? Register now!</string>
+    <string name="forgot_password">Forgot password?</string>
 </resources>
