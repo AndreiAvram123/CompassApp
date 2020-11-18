@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CompassApp</string>
+
+    <string name="welcome_text">Let\'s get you in!</string>
+    <string name="log_in">Log In</string>
+    <string name="register">Register</string>
+</resources>
