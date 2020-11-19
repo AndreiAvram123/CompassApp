@@ -22,11 +22,11 @@ class AuthRepository {
 
     suspend fun performLogin(state:MutableLiveData<AuthenticationResult>) {
         state.postValue(AuthenticationResult.Loading)
-        val response =  callRunner.makeCall<Any>(Call<TemplatesHandler>()){
-            state.postValue(AuthenticationResult.AuthenticationSuccessful)
-        }
-        if(response is Result.Error){
-            state.postValue(AuthenticationResult.FailedAuthentication(response.exception.localizedMessage ?: "Unknown"))
-        }
+//        val response =  callRunner.makeCall<Any>( Call<TemplatesHandler>()){
+//            state.postValue(AuthenticationResult.AuthenticationSuccessful)
+//        }
+//        if(response is Result.Error){
+//            state.postValue(AuthenticationResult.FailedAuthentication(response.exception.localizedMessage ?: "Unknown"))
+//        }
     }
 }

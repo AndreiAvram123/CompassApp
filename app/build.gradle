@@ -36,9 +36,16 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
 }
 
 dependencies {
+
+
+    // Amplify core dependency
+    implementation 'com.amplifyframework:core:1.4.1'
 
     //lifecycle
     implementation "androidx.fragment:fragment-ktx:1.2.5"
@@ -52,7 +59,7 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
     implementation 'com.squareup.okhttp3:okhttp:4.9.0'
 
-    //navigatoin
+    //navigation
     def nav_version = "2.3.1"
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"

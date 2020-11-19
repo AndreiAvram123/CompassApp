@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-compassapp-dev-232449-authRole",
+      "UnauthRoleArn": "arn:aws:iam::376885662440:role/amplify-compassapp-dev-232449-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::376885662440:role/amplify-compassapp-dev-232449-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-compassapp-dev-232449-deployment",
+      "UnauthRoleName": "amplify-compassapp-dev-232449-unauthRole",
+      "StackName": "amplify-compassapp-dev-232449",
+      "StackId": "arn:aws:cloudformation:eu-west-2:376885662440:stack/amplify-compassapp-dev-232449/6ce26020-2abe-11eb-a80d-0a5e9edf4660",
+      "AmplifyAppId": "d3habpiw7ife0k"
+    }
+  }
+}
