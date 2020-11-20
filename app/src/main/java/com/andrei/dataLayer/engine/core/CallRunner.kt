@@ -1,16 +1,14 @@
 package com.andrei.dataLayer.engine.core
 
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.liveData
-import okhttp3.Interceptor
 import retrofit2.Call
 import retrofit2.awaitResponse
 
 class CallRunner (private val responseHandler: ResponseHandler){
 
 
-     fun < T> makeObservableCall(call: Call<T>,completion : suspend (data:T)->Unit)  = liveData<Result<T>> {
-         emit(Result.Loading)
+     fun < T> makeObservableCall(call: Call<T>,completion : suspend (data:T)->Unit)  = liveData<DataResult<T>> {
+         emit(DataResult.Loading)
          val url = call.request().url.toString()
          try {
              val response =  call.awaitResponse()
@@ -23,7 +21,7 @@ class CallRunner (private val responseHandler: ResponseHandler){
            emit(responseHandler.handleRequestException(e,url))
         }
     }
-    suspend fun <T> makeCall(call: Call<T>, completion:suspend (data:T)->Unit): Result<T> {
+    suspend fun <T> makeCall(call: Call<T>, completion:suspend (data:T)->Unit): DataResult<T> {
 
         val url = call.request().url.toString()
         try {

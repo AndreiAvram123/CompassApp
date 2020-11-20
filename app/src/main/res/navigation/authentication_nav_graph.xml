@@ -28,7 +28,11 @@
     <fragment
         android:id="@+id/confirmationCodeFragment"
         android:name="com.andrei.compassapp.fragments.ConfirmationCodeFragment"
-        android:label="ConfirmationCodeFragment" />
+        android:label="ConfirmationCodeFragment" >
+        <argument
+            android:name="username"
+            app:argType="string" />
+    </fragment>
     <action android:id="@+id/action_global_confirmationCodeFragment" app:destination="@id/confirmationCodeFragment" />
     <fragment
         android:id="@+id/registerFragment"

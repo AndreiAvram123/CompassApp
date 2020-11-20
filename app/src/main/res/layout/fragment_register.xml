@@ -64,7 +64,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/screens_register_title_text_view">
 
                     <EditText
-                        android:id="@+id/screens_register_username_edit_text"
+                        android:id="@+id/screens_register_username_input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
@@ -76,7 +76,7 @@
                         app:layout_constraintTop_toBottomOf="@+id/login_text" />
 
                     <EditText
-                        android:id="@+id/screens_register_email_edit_text"
+                        android:id="@+id/screens_register_email_input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -88,7 +88,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/username_login_edit_text" />
                     <EditText
-                        android:id="@+id/screens_register_password_edit_text"
+                        android:id="@+id/screens_register_password_input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
@@ -100,7 +100,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/username_login_edit_text" />
                     <EditText
-                        android:id="@+id/screens_register_reenter_password_edit_text"
+                        android:id="@+id/screens_register_reenter_password_input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"

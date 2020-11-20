@@ -2,10 +2,9 @@ package com.andrei.dataLayer.engine.core
 
 import android.util.Log
 import com.andrei.compassapp.BuildConfig
-import com.google.firebase.crashlytics.FirebaseCrashlytics
 
 class ResponseHandler private constructor(){
-      private val firebaseCrashlytics: FirebaseCrashlytics = FirebaseCrashlytics.getInstance()
+    //  private val firebaseCrashlytics: FirebaseCrashlytics = FirebaseCrashlytics.getInstance()
 
       companion object {
          @JvmStatic
@@ -15,20 +14,20 @@ class ResponseHandler private constructor(){
 
     private val TAG = ResponseHandler::class.java.simpleName
 
-    fun <T : Any> handleSuccess(data: T): Result<T> {
-        return Result.Success(data)
+    fun <T : Any> handleSuccess(data: T): DataResult<T> {
+        return DataResult.Success(data)
     }
 
-    fun <T > handleRequestException(e: Exception, string: String): Result<T> {
-        Log.e(TAG,"Error with request $string")
+    fun <T > handleRequestException(e: Exception, url: String): DataResult<T> {
+        Log.e(TAG,"Error with request $url")
         logException(e)
-        return Result.Error(e)
+        return DataResult.Error(e)
     }
 
     private fun logException(e:Exception){
-        e.printStackTrace()
+       Log.e(TAG, e.stackTraceToString())
         if(!BuildConfig.DEBUG){
-           firebaseCrashlytics.recordException(e)
+         //  firebaseCrashlytics.recordException(e)
         }
     }
 }

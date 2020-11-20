@@ -19,4 +19,5 @@
     <string name="email_hint">email...</string>
     <string name="reenter_password_hint">reenter password</string>
     <string name="screens_register_finish_text">Finish</string>
+    <string name="screens_confirmation_code_invalid_code">Invalid code</string>
 </resources>
