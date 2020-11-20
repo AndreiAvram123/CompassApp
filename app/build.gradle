@@ -27,6 +27,11 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [crashlyticsCollectionEnabled: "true", performanceLogcatEnabled:"false","performanceCollectionDisabled" :"false"]
+        }
+
+        debug{
+            manifestPlaceholders = [crashlyticsCollectionEnabled: "false", performanceLogcatEnabled:"false","performanceCollectionDisabled" :"true"]
         }
     }
     compileOptions {
@@ -39,6 +44,7 @@ android {
     testOptions {
         unitTests.returnDefaultValues = true
     }
+
 }
 
 dependencies {
@@ -84,4 +90,12 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
+static def getBuildNumber() {
+    return ['sh', '-c', gitExecutable() + ' rev-list HEAD --count'].execute().text.trim().toInteger()
+}
+
+// Finds the git executable on the current build environment
+static def gitExecutable() {
+    return ['sh', '-c', '/etc/profile; which git'].execute().text.trim()
 }

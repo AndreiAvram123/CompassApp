@@ -10,4 +10,13 @@
     <string name="password_hint">password...</string>
     <string name="register_text_login">Don\'t have an account yet? Register now!</string>
     <string name="forgot_password">Forgot password?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="screen_confirmation_message">Confirm your email</string>
+    <string name="screen_confirmation_confirm_message">Please enter the code you received via email</string>
+    <string name="screens_confirmation_code_finish_text">Finish</string>
+    <string name="screens_register_title">Let\'s create an account</string>
+    <string name="email_hint">email...</string>
+    <string name="reenter_password_hint">reenter password</string>
+    <string name="screens_register_finish_text">Finish</string>
 </resources>
