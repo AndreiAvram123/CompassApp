@@ -46,6 +46,7 @@ dependencies {
 
     // Amplify core dependency
     implementation 'com.amplifyframework:core:1.4.1'
+    implementation 'com.amplifyframework:aws-auth-cognito:1.4.1'
 
     //lifecycle
     implementation "androidx.fragment:fragment-ktx:1.2.5"

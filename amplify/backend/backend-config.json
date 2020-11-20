@@ -1,1 +1,10 @@
-{}
+{
+  "auth": {
+    "compassappbde90a8c": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

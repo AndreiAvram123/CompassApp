@@ -10,6 +10,11 @@
       "StackName": "amplify-compassapp-dev-232449",
       "StackId": "arn:aws:cloudformation:eu-west-2:376885662440:stack/amplify-compassapp-dev-232449/6ce26020-2abe-11eb-a80d-0a5e9edf4660",
       "AmplifyAppId": "d3habpiw7ife0k"
+    },
+    "categories": {
+      "auth": {
+        "compassappbde90a8c": {}
+      }
     }
   }
 }
